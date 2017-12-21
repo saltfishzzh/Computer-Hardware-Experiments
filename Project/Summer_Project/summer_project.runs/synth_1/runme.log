@@ -1,0 +1,1085 @@
+
+*** Running vivado
+    with args -log top.vds -m64 -mode batch -messageDb vivado.pb -notrace -source top.tcl
+
+
+****** Vivado v2016.2 (64-bit)
+  **** SW Build 1577090 on Thu Jun  2 16:32:40 MDT 2016
+  **** IP Build 1577682 on Fri Jun  3 12:00:54 MDT 2016
+    ** Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+
+source top.tcl -notrace
+Command: synth_design -top top -part xq7k325trf676-2L
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xq7k325t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xq7k325t'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 636 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:08 . Memory (MB): peak = 334.684 ; gain = 127.539
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'top' [C:/Users/Jerry Chang/Desktop/summer2017/Project/Summer_Project/summer_project.srcs/sources_1/imports/src/top.v:21]
+INFO: [Synth 8-638] synthesizing module 'clk_diff' [C:/Users/Jerry Chang/Desktop/summer2017/Project/Summer_Project/summer_project.srcs/sources_1/imports/src/clk_diff.v:5]
+INFO: [Synth 8-638] synthesizing module 'IBUFGDS' [C:/Xilinx/Vivado/2016.2/scripts/rt/data/unisim_comp.v:14583]
+	Parameter CAPACITANCE bound to: DONT_CARE - type: string 
+	Parameter DIFF_TERM bound to: FALSE - type: string 
+	Parameter IBUF_DELAY_VALUE bound to: 0 - type: string 
+	Parameter IBUF_LOW_PWR bound to: TRUE - type: string 
+	Parameter IOSTANDARD bound to: DEFAULT - type: string 
+INFO: [Synth 8-256] done synthesizing module 'IBUFGDS' (1#1) [C:/Xilinx/Vivado/2016.2/scripts/rt/data/unisim_comp.v:14583]
+INFO: [Synth 8-256] done synthesizing module 'clk_diff' (2#1) [C:/Users/Jerry Chang/Desktop/summer2017/Project/Summer_Project/summer_project.srcs/sources_1/imports/src/clk_diff.v:5]
+INFO: [Synth 8-638] synthesizing module 'MCPU' [C:/Users/Jerry Chang/Desktop/summer2017/Project/Summer_Project/summer_project.srcs/sources_1/imports/src/MCPU.v:21]
+INFO: [Synth 8-638] synthesizing module 'MCtrl' [C:/Users/Jerry Chang/Desktop/summer2017/Project/Summer_Project/summer_project.srcs/sources_1/imports/src/MCtrl.v:21]
+	Parameter IF bound to: 5'b00000 
+	Parameter ID bound to: 5'b00001 
+	Parameter EXC_MEM bound to: 5'b00010 
+	Parameter EXC_R bound to: 5'b00011 
+	Parameter EXC_I bound to: 5'b00100 
+	Parameter EXC_LUI bound to: 5'b00101 
+	Parameter EXC_BEQ bound to: 5'b00110 
+	Parameter EXC_BNE bound to: 5'b00111 
+	Parameter EXC_J bound to: 5'b01000 
+	Parameter EXC_JAL bound to: 5'b01001 
+	Parameter EXC_JR bound to: 5'b01010 
+	Parameter EXC_JALR bound to: 5'b01011 
+	Parameter MEM_RD bound to: 5'b01100 
+	Parameter MEM_WD bound to: 5'b01101 
+	Parameter WB_LW bound to: 5'b01110 
+	Parameter WB_R bound to: 5'b01111 
+	Parameter WB_I bound to: 5'b10000 
+	Parameter ERROR bound to: 5'b11111 
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/Jerry Chang/Desktop/summer2017/Project/Summer_Project/summer_project.srcs/sources_1/imports/src/MCtrl.v:144]
+INFO: [Synth 8-256] done synthesizing module 'MCtrl' (3#1) [C:/Users/Jerry Chang/Desktop/summer2017/Project/Summer_Project/summer_project.srcs/sources_1/imports/src/MCtrl.v:21]
+INFO: [Synth 8-638] synthesizing module 'MDPath' [C:/Users/Jerry Chang/Desktop/summer2017/Project/Summer_Project/summer_project.srcs/sources_1/imports/src/MDPath.v:21]
+INFO: [Synth 8-638] synthesizing module 'REG32' [C:/Users/Jerry Chang/Desktop/summer2017/Project/Summer_Project/summer_project.srcs/sources_1/imports/src/REG32.v:21]
+INFO: [Synth 8-256] done synthesizing module 'REG32' (4#1) [C:/Users/Jerry Chang/Desktop/summer2017/Project/Summer_Project/summer_project.srcs/sources_1/imports/src/REG32.v:21]
+INFO: [Synth 8-638] synthesizing module 'alu' [C:/Users/Jerry Chang/Desktop/summer2017/Project/Summer_Project/summer_project.srcs/sources_1/imports/src/ALU_v.v:21]
+	Parameter one bound to: 1 - type: integer 
+	Parameter zero_0 bound to: 0 - type: integer 
+INFO: [Synth 8-226] default block is never used [C:/Users/Jerry Chang/Desktop/summer2017/Project/Summer_Project/summer_project.srcs/sources_1/imports/src/ALU_v.v:38]
+INFO: [Synth 8-256] done synthesizing module 'alu' (5#1) [C:/Users/Jerry Chang/Desktop/summer2017/Project/Summer_Project/summer_project.srcs/sources_1/imports/src/ALU_v.v:21]
+INFO: [Synth 8-638] synthesizing module 'Regs' [C:/Users/Jerry Chang/Desktop/summer2017/Project/Summer_Project/summer_project.srcs/sources_1/imports/src/regs.v:21]
+INFO: [Synth 8-256] done synthesizing module 'Regs' (6#1) [C:/Users/Jerry Chang/Desktop/summer2017/Project/Summer_Project/summer_project.srcs/sources_1/imports/src/regs.v:21]
+INFO: [Synth 8-638] synthesizing module 'MUX4T1_5' [C:/Users/Jerry Chang/Desktop/summer2017/Project/Summer_Project/summer_project.srcs/sources_1/imports/src/MUX4T1_5.v:21]
+INFO: [Synth 8-256] done synthesizing module 'MUX4T1_5' (7#1) [C:/Users/Jerry Chang/Desktop/summer2017/Project/Summer_Project/summer_project.srcs/sources_1/imports/src/MUX4T1_5.v:21]
+INFO: [Synth 8-638] synthesizing module 'MUX4T1_32' [C:/Users/Jerry Chang/Desktop/summer2017/Project/Summer_Project/summer_project.srcs/sources_1/imports/src/MUX4T1_32.v:21]
+INFO: [Synth 8-256] done synthesizing module 'MUX4T1_32' (8#1) [C:/Users/Jerry Chang/Desktop/summer2017/Project/Summer_Project/summer_project.srcs/sources_1/imports/src/MUX4T1_32.v:21]
+INFO: [Synth 8-638] synthesizing module 'MUX2T1_32' [C:/Users/Jerry Chang/Desktop/summer2017/Project/Summer_Project/summer_project.srcs/sources_1/imports/src/MUX2T1_32.v:21]
+INFO: [Synth 8-256] done synthesizing module 'MUX2T1_32' (9#1) [C:/Users/Jerry Chang/Desktop/summer2017/Project/Summer_Project/summer_project.srcs/sources_1/imports/src/MUX2T1_32.v:21]
+INFO: [Synth 8-638] synthesizing module 'Ext_32' [C:/Users/Jerry Chang/Desktop/summer2017/Project/Summer_Project/summer_project.srcs/sources_1/imports/src/Ext_32.v:21]
+INFO: [Synth 8-256] done synthesizing module 'Ext_32' (10#1) [C:/Users/Jerry Chang/Desktop/summer2017/Project/Summer_Project/summer_project.srcs/sources_1/imports/src/Ext_32.v:21]
+INFO: [Synth 8-256] done synthesizing module 'MDPath' (11#1) [C:/Users/Jerry Chang/Desktop/summer2017/Project/Summer_Project/summer_project.srcs/sources_1/imports/src/MDPath.v:21]
+INFO: [Synth 8-256] done synthesizing module 'MCPU' (12#1) [C:/Users/Jerry Chang/Desktop/summer2017/Project/Summer_Project/summer_project.srcs/sources_1/imports/src/MCPU.v:21]
+INFO: [Synth 8-638] synthesizing module 'RAM_B' [C:/Users/Jerry Chang/Desktop/summer2017/Project/Summer_Project/summer_project.runs/synth_1/.Xil/Vivado-9820-DESKTOP-N4M5H14/realtime/RAM_B_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'RAM_B' (13#1) [C:/Users/Jerry Chang/Desktop/summer2017/Project/Summer_Project/summer_project.runs/synth_1/.Xil/Vivado-9820-DESKTOP-N4M5H14/realtime/RAM_B_stub.v:6]
+INFO: [Synth 8-638] synthesizing module 'char_ram' [C:/Users/Jerry Chang/Desktop/summer2017/Project/Summer_Project/summer_project.runs/synth_1/.Xil/Vivado-9820-DESKTOP-N4M5H14/realtime/char_ram_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'char_ram' (14#1) [C:/Users/Jerry Chang/Desktop/summer2017/Project/Summer_Project/summer_project.runs/synth_1/.Xil/Vivado-9820-DESKTOP-N4M5H14/realtime/char_ram_stub.v:6]
+INFO: [Synth 8-638] synthesizing module 'MIO_BUS' [C:/Users/Jerry Chang/Desktop/summer2017/Project/Summer_Project/summer_project.srcs/sources_1/imports/src/MIO_BUS.v:21]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/Jerry Chang/Desktop/summer2017/Project/Summer_Project/summer_project.srcs/sources_1/imports/src/MIO_BUS.v:79]
+INFO: [Synth 8-256] done synthesizing module 'MIO_BUS' (15#1) [C:/Users/Jerry Chang/Desktop/summer2017/Project/Summer_Project/summer_project.srcs/sources_1/imports/src/MIO_BUS.v:21]
+INFO: [Synth 8-638] synthesizing module 'Multi_8CH32' [C:/Users/Jerry Chang/Desktop/summer2017/Project/Summer_Project/summer_project.srcs/sources_1/imports/src/Multi_8CH32.v:21]
+INFO: [Synth 8-638] synthesizing module 'MUX8T1_32' [C:/Users/Jerry Chang/Desktop/summer2017/Project/Summer_Project/summer_project.srcs/sources_1/imports/src/MUX8T1_32.v:21]
+INFO: [Synth 8-256] done synthesizing module 'MUX8T1_32' (16#1) [C:/Users/Jerry Chang/Desktop/summer2017/Project/Summer_Project/summer_project.srcs/sources_1/imports/src/MUX8T1_32.v:21]
+INFO: [Synth 8-638] synthesizing module 'MUX8T1_8' [C:/Users/Jerry Chang/Desktop/summer2017/Project/Summer_Project/summer_project.srcs/sources_1/imports/src/MUX8T1_8.v:21]
+INFO: [Synth 8-256] done synthesizing module 'MUX8T1_8' (17#1) [C:/Users/Jerry Chang/Desktop/summer2017/Project/Summer_Project/summer_project.srcs/sources_1/imports/src/MUX8T1_8.v:21]
+WARNING: [Synth 8-5788] Register cpu_blink_reg in module Multi_8CH32 is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/Jerry Chang/Desktop/summer2017/Project/Summer_Project/summer_project.srcs/sources_1/imports/src/Multi_8CH32.v:52]
+WARNING: [Synth 8-5788] Register cpu_point_reg in module Multi_8CH32 is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/Jerry Chang/Desktop/summer2017/Project/Summer_Project/summer_project.srcs/sources_1/imports/src/Multi_8CH32.v:62]
+INFO: [Synth 8-256] done synthesizing module 'Multi_8CH32' (18#1) [C:/Users/Jerry Chang/Desktop/summer2017/Project/Summer_Project/summer_project.srcs/sources_1/imports/src/Multi_8CH32.v:21]
+INFO: [Synth 8-638] synthesizing module 'Display' [C:/Users/Jerry Chang/Desktop/summer2017/Project/Summer_Project/summer_project.srcs/sources_1/imports/src/Display.v:21]
+INFO: [Synth 8-638] synthesizing module 'HexTo8SEG' [C:/Users/Jerry Chang/Desktop/summer2017/Project/Summer_Project/summer_project.srcs/sources_1/imports/src/HexTo8SEG.v:21]
+INFO: [Synth 8-638] synthesizing module 'MC14495_ZJU' [C:/Users/Jerry Chang/Desktop/summer2017/Project/Summer_Project/summer_project.srcs/sources_1/imports/src/MC14495_ZJU.v:23]
+INFO: [Synth 8-638] synthesizing module 'AND4' [C:/Xilinx/Vivado/2016.2/scripts/rt/data/unisim_comp.v:108]
+INFO: [Synth 8-256] done synthesizing module 'AND4' (19#1) [C:/Xilinx/Vivado/2016.2/scripts/rt/data/unisim_comp.v:108]
+INFO: [Synth 8-638] synthesizing module 'AND3' [C:/Xilinx/Vivado/2016.2/scripts/rt/data/unisim_comp.v:60]
+INFO: [Synth 8-256] done synthesizing module 'AND3' (20#1) [C:/Xilinx/Vivado/2016.2/scripts/rt/data/unisim_comp.v:60]
+INFO: [Synth 8-638] synthesizing module 'AND2' [C:/Xilinx/Vivado/2016.2/scripts/rt/data/unisim_comp.v:14]
+INFO: [Synth 8-256] done synthesizing module 'AND2' (21#1) [C:/Xilinx/Vivado/2016.2/scripts/rt/data/unisim_comp.v:14]
+INFO: [Synth 8-638] synthesizing module 'INV' [C:/Xilinx/Vivado/2016.2/scripts/rt/data/unisim_comp.v:17255]
+INFO: [Synth 8-256] done synthesizing module 'INV' (22#1) [C:/Xilinx/Vivado/2016.2/scripts/rt/data/unisim_comp.v:17255]
+INFO: [Synth 8-638] synthesizing module 'OR4' [C:/Xilinx/Vivado/2016.2/scripts/rt/data/unisim_comp.v:25578]
+INFO: [Synth 8-256] done synthesizing module 'OR4' (23#1) [C:/Xilinx/Vivado/2016.2/scripts/rt/data/unisim_comp.v:25578]
+INFO: [Synth 8-638] synthesizing module 'OR3' [C:/Xilinx/Vivado/2016.2/scripts/rt/data/unisim_comp.v:25530]
+INFO: [Synth 8-256] done synthesizing module 'OR3' (24#1) [C:/Xilinx/Vivado/2016.2/scripts/rt/data/unisim_comp.v:25530]
+INFO: [Synth 8-638] synthesizing module 'OR2' [C:/Xilinx/Vivado/2016.2/scripts/rt/data/unisim_comp.v:25484]
+INFO: [Synth 8-256] done synthesizing module 'OR2' (25#1) [C:/Xilinx/Vivado/2016.2/scripts/rt/data/unisim_comp.v:25484]
+INFO: [Synth 8-256] done synthesizing module 'MC14495_ZJU' (26#1) [C:/Users/Jerry Chang/Desktop/summer2017/Project/Summer_Project/summer_project.srcs/sources_1/imports/src/MC14495_ZJU.v:23]
+INFO: [Synth 8-256] done synthesizing module 'HexTo8SEG' (27#1) [C:/Users/Jerry Chang/Desktop/summer2017/Project/Summer_Project/summer_project.srcs/sources_1/imports/src/HexTo8SEG.v:21]
+INFO: [Synth 8-638] synthesizing module 'SSeg_map' [C:/Users/Jerry Chang/Desktop/summer2017/Project/Summer_Project/summer_project.srcs/sources_1/imports/src/SSeg_map.v:21]
+INFO: [Synth 8-256] done synthesizing module 'SSeg_map' (28#1) [C:/Users/Jerry Chang/Desktop/summer2017/Project/Summer_Project/summer_project.srcs/sources_1/imports/src/SSeg_map.v:21]
+INFO: [Synth 8-638] synthesizing module 'MUX2T1_64' [C:/Users/Jerry Chang/Desktop/summer2017/Project/Summer_Project/summer_project.srcs/sources_1/imports/src/MUX2T1_64.v:21]
+INFO: [Synth 8-256] done synthesizing module 'MUX2T1_64' (29#1) [C:/Users/Jerry Chang/Desktop/summer2017/Project/Summer_Project/summer_project.srcs/sources_1/imports/src/MUX2T1_64.v:21]
+INFO: [Synth 8-638] synthesizing module 'P2S' [C:/Users/Jerry Chang/Desktop/summer2017/Project/Summer_Project/summer_project.srcs/sources_1/imports/src/P2S_IO.v:21]
+	Parameter DATA_BITS bound to: 64 - type: integer 
+	Parameter DATA_COUNT_BITS bound to: 6 - type: integer 
+	Parameter DIR bound to: 1 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'P2S' (30#1) [C:/Users/Jerry Chang/Desktop/summer2017/Project/Summer_Project/summer_project.srcs/sources_1/imports/src/P2S_IO.v:21]
+INFO: [Synth 8-256] done synthesizing module 'Display' (31#1) [C:/Users/Jerry Chang/Desktop/summer2017/Project/Summer_Project/summer_project.srcs/sources_1/imports/src/Display.v:21]
+INFO: [Synth 8-638] synthesizing module 'Seg7_Dev' [C:/Users/Jerry Chang/Desktop/summer2017/Project/Summer_Project/summer_project.srcs/sources_1/imports/src/Seg7_Dev_IO.v:21]
+INFO: [Synth 8-256] done synthesizing module 'Seg7_Dev' (32#1) [C:/Users/Jerry Chang/Desktop/summer2017/Project/Summer_Project/summer_project.srcs/sources_1/imports/src/Seg7_Dev_IO.v:21]
+INFO: [Synth 8-638] synthesizing module 'GPIO' [C:/Users/Jerry Chang/Desktop/summer2017/Project/Summer_Project/summer_project.srcs/sources_1/imports/src/GPIO.v:21]
+INFO: [Synth 8-638] synthesizing module 'LEDP2S' [C:/Users/Jerry Chang/Desktop/summer2017/Project/Summer_Project/summer_project.srcs/sources_1/imports/src/LEDP2S_IO.v:21]
+	Parameter DATA_BITS bound to: 16 - type: integer 
+	Parameter DATA_COUNT_BITS bound to: 4 - type: integer 
+	Parameter DIR bound to: 0 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'LEDP2S' (33#1) [C:/Users/Jerry Chang/Desktop/summer2017/Project/Summer_Project/summer_project.srcs/sources_1/imports/src/LEDP2S_IO.v:21]
+WARNING: [Synth 8-5788] Register GPIOf0_reg in module GPIO is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/Jerry Chang/Desktop/summer2017/Project/Summer_Project/summer_project.srcs/sources_1/imports/src/GPIO.v:42]
+INFO: [Synth 8-256] done synthesizing module 'GPIO' (34#1) [C:/Users/Jerry Chang/Desktop/summer2017/Project/Summer_Project/summer_project.srcs/sources_1/imports/src/GPIO.v:21]
+INFO: [Synth 8-638] synthesizing module 'PIO' [C:/Users/Jerry Chang/Desktop/summer2017/Project/Summer_Project/summer_project.srcs/sources_1/imports/src/PIO_IO.v:21]
+INFO: [Synth 8-256] done synthesizing module 'PIO' (35#1) [C:/Users/Jerry Chang/Desktop/summer2017/Project/Summer_Project/summer_project.srcs/sources_1/imports/src/PIO_IO.v:21]
+INFO: [Synth 8-638] synthesizing module 'clk_div' [C:/Users/Jerry Chang/Desktop/summer2017/Project/Summer_Project/summer_project.srcs/sources_1/imports/src/clk_div.v:21]
+WARNING: [Synth 8-5788] Register num_reg in module clk_div is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/Jerry Chang/Desktop/summer2017/Project/Summer_Project/summer_project.srcs/sources_1/imports/src/clk_div.v:39]
+INFO: [Synth 8-256] done synthesizing module 'clk_div' (36#1) [C:/Users/Jerry Chang/Desktop/summer2017/Project/Summer_Project/summer_project.srcs/sources_1/imports/src/clk_div.v:21]
+INFO: [Synth 8-638] synthesizing module 'SAnti_jitter' [C:/Users/Jerry Chang/Desktop/summer2017/Project/Summer_Project/summer_project.srcs/sources_1/imports/src/SAnti_jitter_IO.v:21]
+INFO: [Synth 8-256] done synthesizing module 'SAnti_jitter' (37#1) [C:/Users/Jerry Chang/Desktop/summer2017/Project/Summer_Project/summer_project.srcs/sources_1/imports/src/SAnti_jitter_IO.v:21]
+INFO: [Synth 8-638] synthesizing module 'Counter' [C:/Users/Jerry Chang/Desktop/summer2017/Project/Summer_Project/summer_project.srcs/sources_1/imports/src/Counter_3_IO.v:21]
+WARNING: [Synth 8-5788] Register M0_reg in module Counter is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/Jerry Chang/Desktop/summer2017/Project/Summer_Project/summer_project.srcs/sources_1/imports/src/Counter_3_IO.v:41]
+WARNING: [Synth 8-5788] Register clr0_reg in module Counter is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/Jerry Chang/Desktop/summer2017/Project/Summer_Project/summer_project.srcs/sources_1/imports/src/Counter_3_IO.v:55]
+INFO: [Synth 8-256] done synthesizing module 'Counter' (38#1) [C:/Users/Jerry Chang/Desktop/summer2017/Project/Summer_Project/summer_project.srcs/sources_1/imports/src/Counter_3_IO.v:21]
+INFO: [Synth 8-638] synthesizing module 'vgac' [C:/Users/Jerry Chang/Desktop/summer2017/Project/Summer_Project/summer_project.srcs/sources_1/imports/src/VGA.v:21]
+INFO: [Synth 8-256] done synthesizing module 'vgac' (39#1) [C:/Users/Jerry Chang/Desktop/summer2017/Project/Summer_Project/summer_project.srcs/sources_1/imports/src/VGA.v:21]
+INFO: [Synth 8-638] synthesizing module 'PS2' [C:/Users/Jerry Chang/Desktop/summer2017/Project/Summer_Project/summer_project.srcs/sources_1/imports/src/PS2.v:1]
+INFO: [Synth 8-256] done synthesizing module 'PS2' (40#1) [C:/Users/Jerry Chang/Desktop/summer2017/Project/Summer_Project/summer_project.srcs/sources_1/imports/src/PS2.v:1]
+INFO: [Synth 8-638] synthesizing module 'font_table' [C:/Users/Jerry Chang/Desktop/summer2017/Project/Summer_Project/summer_project.srcs/sources_1/imports/src/font_table.v:23]
+INFO: [Synth 8-256] done synthesizing module 'font_table' (41#1) [C:/Users/Jerry Chang/Desktop/summer2017/Project/Summer_Project/summer_project.srcs/sources_1/imports/src/font_table.v:23]
+INFO: [Synth 8-638] synthesizing module 'cmd_ram' [C:/Users/Jerry Chang/Desktop/summer2017/Project/Summer_Project/summer_project.runs/synth_1/.Xil/Vivado-9820-DESKTOP-N4M5H14/realtime/cmd_ram_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'cmd_ram' (42#1) [C:/Users/Jerry Chang/Desktop/summer2017/Project/Summer_Project/summer_project.runs/synth_1/.Xil/Vivado-9820-DESKTOP-N4M5H14/realtime/cmd_ram_stub.v:6]
+INFO: [Synth 8-638] synthesizing module 'SEnter_2_32' [C:/Users/Jerry Chang/Desktop/summer2017/Project/Summer_Project/summer_project.srcs/sources_1/imports/src/SEnter_2_32_IO.v:21]
+INFO: [Synth 8-256] done synthesizing module 'SEnter_2_32' (43#1) [C:/Users/Jerry Chang/Desktop/summer2017/Project/Summer_Project/summer_project.srcs/sources_1/imports/src/SEnter_2_32_IO.v:21]
+WARNING: [Synth 8-3848] Net CPU2IO in module/entity top does not have driver. [C:/Users/Jerry Chang/Desktop/summer2017/Project/Summer_Project/summer_project.srcs/sources_1/imports/src/top.v:70]
+WARNING: [Synth 8-3848] Net counter1_out in module/entity top does not have driver. [C:/Users/Jerry Chang/Desktop/summer2017/Project/Summer_Project/summer_project.srcs/sources_1/imports/src/top.v:142]
+WARNING: [Synth 8-3848] Net counter2_out in module/entity top does not have driver. [C:/Users/Jerry Chang/Desktop/summer2017/Project/Summer_Project/summer_project.srcs/sources_1/imports/src/top.v:141]
+WARNING: [Synth 8-3848] Net ps2_ready in module/entity top does not have driver. [C:/Users/Jerry Chang/Desktop/summer2017/Project/Summer_Project/summer_project.srcs/sources_1/imports/src/top.v:84]
+INFO: [Synth 8-256] done synthesizing module 'top' (44#1) [C:/Users/Jerry Chang/Desktop/summer2017/Project/Summer_Project/summer_project.srcs/sources_1/imports/src/top.v:21]
+WARNING: [Synth 8-3917] design top has port Buzzer driven by constant 1
+WARNING: [Synth 8-3331] design PS2 has unconnected port clr
+WARNING: [Synth 8-3331] design SSeg_map has unconnected port Disp_num[63]
+WARNING: [Synth 8-3331] design SSeg_map has unconnected port Disp_num[62]
+WARNING: [Synth 8-3331] design SSeg_map has unconnected port Disp_num[61]
+WARNING: [Synth 8-3331] design SSeg_map has unconnected port Disp_num[60]
+WARNING: [Synth 8-3331] design SSeg_map has unconnected port Disp_num[59]
+WARNING: [Synth 8-3331] design SSeg_map has unconnected port Disp_num[58]
+WARNING: [Synth 8-3331] design SSeg_map has unconnected port Disp_num[57]
+WARNING: [Synth 8-3331] design SSeg_map has unconnected port Disp_num[56]
+WARNING: [Synth 8-3331] design SSeg_map has unconnected port Disp_num[55]
+WARNING: [Synth 8-3331] design SSeg_map has unconnected port Disp_num[54]
+WARNING: [Synth 8-3331] design SSeg_map has unconnected port Disp_num[53]
+WARNING: [Synth 8-3331] design SSeg_map has unconnected port Disp_num[52]
+WARNING: [Synth 8-3331] design SSeg_map has unconnected port Disp_num[51]
+WARNING: [Synth 8-3331] design SSeg_map has unconnected port Disp_num[50]
+WARNING: [Synth 8-3331] design SSeg_map has unconnected port Disp_num[49]
+WARNING: [Synth 8-3331] design SSeg_map has unconnected port Disp_num[48]
+WARNING: [Synth 8-3331] design SSeg_map has unconnected port Disp_num[47]
+WARNING: [Synth 8-3331] design SSeg_map has unconnected port Disp_num[46]
+WARNING: [Synth 8-3331] design SSeg_map has unconnected port Disp_num[45]
+WARNING: [Synth 8-3331] design SSeg_map has unconnected port Disp_num[44]
+WARNING: [Synth 8-3331] design SSeg_map has unconnected port Disp_num[43]
+WARNING: [Synth 8-3331] design SSeg_map has unconnected port Disp_num[42]
+WARNING: [Synth 8-3331] design SSeg_map has unconnected port Disp_num[41]
+WARNING: [Synth 8-3331] design SSeg_map has unconnected port Disp_num[40]
+WARNING: [Synth 8-3331] design SSeg_map has unconnected port Disp_num[39]
+WARNING: [Synth 8-3331] design SSeg_map has unconnected port Disp_num[38]
+WARNING: [Synth 8-3331] design SSeg_map has unconnected port Disp_num[37]
+WARNING: [Synth 8-3331] design SSeg_map has unconnected port Disp_num[36]
+WARNING: [Synth 8-3331] design SSeg_map has unconnected port Disp_num[35]
+WARNING: [Synth 8-3331] design SSeg_map has unconnected port Disp_num[34]
+WARNING: [Synth 8-3331] design SSeg_map has unconnected port Disp_num[33]
+WARNING: [Synth 8-3331] design SSeg_map has unconnected port Disp_num[32]
+WARNING: [Synth 8-3331] design MIO_BUS has unconnected port clk
+WARNING: [Synth 8-3331] design MIO_BUS has unconnected port rst
+WARNING: [Synth 8-3331] design MIO_BUS has unconnected port SW[15]
+WARNING: [Synth 8-3331] design MIO_BUS has unconnected port SW[14]
+WARNING: [Synth 8-3331] design MIO_BUS has unconnected port SW[13]
+WARNING: [Synth 8-3331] design MIO_BUS has unconnected port SW[12]
+WARNING: [Synth 8-3331] design MIO_BUS has unconnected port SW[11]
+WARNING: [Synth 8-3331] design MIO_BUS has unconnected port SW[10]
+WARNING: [Synth 8-3331] design MIO_BUS has unconnected port SW[9]
+WARNING: [Synth 8-3331] design MIO_BUS has unconnected port SW[8]
+WARNING: [Synth 8-3331] design MIO_BUS has unconnected port vram_out[31]
+WARNING: [Synth 8-3331] design MIO_BUS has unconnected port vram_out[30]
+WARNING: [Synth 8-3331] design MIO_BUS has unconnected port vram_out[29]
+WARNING: [Synth 8-3331] design MIO_BUS has unconnected port vram_out[28]
+WARNING: [Synth 8-3331] design MIO_BUS has unconnected port vram_out[27]
+WARNING: [Synth 8-3331] design MIO_BUS has unconnected port vram_out[26]
+WARNING: [Synth 8-3331] design MIO_BUS has unconnected port vram_out[25]
+WARNING: [Synth 8-3331] design MIO_BUS has unconnected port vram_out[24]
+WARNING: [Synth 8-3331] design MIO_BUS has unconnected port vram_out[23]
+WARNING: [Synth 8-3331] design MIO_BUS has unconnected port vram_out[22]
+WARNING: [Synth 8-3331] design MIO_BUS has unconnected port vram_out[21]
+WARNING: [Synth 8-3331] design MIO_BUS has unconnected port vram_out[20]
+WARNING: [Synth 8-3331] design MIO_BUS has unconnected port vram_out[19]
+WARNING: [Synth 8-3331] design MIO_BUS has unconnected port vram_out[18]
+WARNING: [Synth 8-3331] design MIO_BUS has unconnected port vram_out[17]
+WARNING: [Synth 8-3331] design MIO_BUS has unconnected port vram_out[16]
+WARNING: [Synth 8-3331] design MIO_BUS has unconnected port vram_out[15]
+WARNING: [Synth 8-3331] design MIO_BUS has unconnected port vram_out[14]
+WARNING: [Synth 8-3331] design MIO_BUS has unconnected port vram_out[13]
+WARNING: [Synth 8-3331] design MIO_BUS has unconnected port vram_out[12]
+WARNING: [Synth 8-3331] design MIO_BUS has unconnected port vram_out[11]
+WARNING: [Synth 8-3331] design MIO_BUS has unconnected port vram_out[10]
+WARNING: [Synth 8-3331] design MIO_BUS has unconnected port vram_out[9]
+WARNING: [Synth 8-3331] design MIO_BUS has unconnected port vram_out[8]
+WARNING: [Synth 8-3331] design MIO_BUS has unconnected port vram_out[7]
+WARNING: [Synth 8-3331] design MIO_BUS has unconnected port led_out[15]
+WARNING: [Synth 8-3331] design MIO_BUS has unconnected port led_out[14]
+WARNING: [Synth 8-3331] design MIO_BUS has unconnected port led_out[13]
+WARNING: [Synth 8-3331] design MIO_BUS has unconnected port led_out[12]
+WARNING: [Synth 8-3331] design MIO_BUS has unconnected port led_out[11]
+WARNING: [Synth 8-3331] design MIO_BUS has unconnected port led_out[10]
+WARNING: [Synth 8-3331] design MIO_BUS has unconnected port led_out[9]
+WARNING: [Synth 8-3331] design MIO_BUS has unconnected port led_out[8]
+WARNING: [Synth 8-3331] design MIO_BUS has unconnected port led_out[7]
+WARNING: [Synth 8-3331] design MIO_BUS has unconnected port led_out[6]
+WARNING: [Synth 8-3331] design MIO_BUS has unconnected port led_out[5]
+WARNING: [Synth 8-3331] design MIO_BUS has unconnected port led_out[4]
+WARNING: [Synth 8-3331] design MIO_BUS has unconnected port led_out[3]
+WARNING: [Synth 8-3331] design MIO_BUS has unconnected port led_out[2]
+WARNING: [Synth 8-3331] design MIO_BUS has unconnected port led_out[1]
+WARNING: [Synth 8-3331] design MIO_BUS has unconnected port led_out[0]
+WARNING: [Synth 8-3331] design MIO_BUS has unconnected port vga_rdn
+WARNING: [Synth 8-3331] design MIO_BUS has unconnected port ps2_ready
+WARNING: [Synth 8-3331] design MCtrl has unconnected port Inst_in[25]
+WARNING: [Synth 8-3331] design MCtrl has unconnected port Inst_in[24]
+WARNING: [Synth 8-3331] design MCtrl has unconnected port Inst_in[23]
+WARNING: [Synth 8-3331] design MCtrl has unconnected port Inst_in[22]
+WARNING: [Synth 8-3331] design MCtrl has unconnected port Inst_in[21]
+WARNING: [Synth 8-3331] design MCtrl has unconnected port Inst_in[20]
+WARNING: [Synth 8-3331] design MCtrl has unconnected port Inst_in[19]
+WARNING: [Synth 8-3331] design MCtrl has unconnected port Inst_in[18]
+WARNING: [Synth 8-3331] design MCtrl has unconnected port Inst_in[17]
+WARNING: [Synth 8-3331] design MCtrl has unconnected port Inst_in[16]
+WARNING: [Synth 8-3331] design MCtrl has unconnected port Inst_in[15]
+WARNING: [Synth 8-3331] design MCtrl has unconnected port Inst_in[14]
+WARNING: [Synth 8-3331] design MCtrl has unconnected port Inst_in[13]
+WARNING: [Synth 8-3331] design MCtrl has unconnected port Inst_in[12]
+INFO: [Common 17-14] Message 'Synth 8-3331' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:09 ; elapsed = 00:00:12 . Memory (MB): peak = 380.473 ; gain = 173.328
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+WARNING: [Synth 8-3295] tying undriven pin M3:I3[31] to constant 0 [C:/Users/Jerry Chang/Desktop/summer2017/Project/Summer_Project/summer_project.srcs/sources_1/imports/src/MDPath.v:60]
+WARNING: [Synth 8-3295] tying undriven pin M3:I3[30] to constant 0 [C:/Users/Jerry Chang/Desktop/summer2017/Project/Summer_Project/summer_project.srcs/sources_1/imports/src/MDPath.v:60]
+WARNING: [Synth 8-3295] tying undriven pin M3:I3[29] to constant 0 [C:/Users/Jerry Chang/Desktop/summer2017/Project/Summer_Project/summer_project.srcs/sources_1/imports/src/MDPath.v:60]
+WARNING: [Synth 8-3295] tying undriven pin M3:I3[28] to constant 0 [C:/Users/Jerry Chang/Desktop/summer2017/Project/Summer_Project/summer_project.srcs/sources_1/imports/src/MDPath.v:60]
+WARNING: [Synth 8-3295] tying undriven pin M3:I3[27] to constant 0 [C:/Users/Jerry Chang/Desktop/summer2017/Project/Summer_Project/summer_project.srcs/sources_1/imports/src/MDPath.v:60]
+WARNING: [Synth 8-3295] tying undriven pin M3:I3[26] to constant 0 [C:/Users/Jerry Chang/Desktop/summer2017/Project/Summer_Project/summer_project.srcs/sources_1/imports/src/MDPath.v:60]
+WARNING: [Synth 8-3295] tying undriven pin M3:I3[25] to constant 0 [C:/Users/Jerry Chang/Desktop/summer2017/Project/Summer_Project/summer_project.srcs/sources_1/imports/src/MDPath.v:60]
+WARNING: [Synth 8-3295] tying undriven pin M3:I3[24] to constant 0 [C:/Users/Jerry Chang/Desktop/summer2017/Project/Summer_Project/summer_project.srcs/sources_1/imports/src/MDPath.v:60]
+WARNING: [Synth 8-3295] tying undriven pin M3:I3[23] to constant 0 [C:/Users/Jerry Chang/Desktop/summer2017/Project/Summer_Project/summer_project.srcs/sources_1/imports/src/MDPath.v:60]
+WARNING: [Synth 8-3295] tying undriven pin M3:I3[22] to constant 0 [C:/Users/Jerry Chang/Desktop/summer2017/Project/Summer_Project/summer_project.srcs/sources_1/imports/src/MDPath.v:60]
+WARNING: [Synth 8-3295] tying undriven pin M3:I3[21] to constant 0 [C:/Users/Jerry Chang/Desktop/summer2017/Project/Summer_Project/summer_project.srcs/sources_1/imports/src/MDPath.v:60]
+WARNING: [Synth 8-3295] tying undriven pin M3:I3[20] to constant 0 [C:/Users/Jerry Chang/Desktop/summer2017/Project/Summer_Project/summer_project.srcs/sources_1/imports/src/MDPath.v:60]
+WARNING: [Synth 8-3295] tying undriven pin M3:I3[19] to constant 0 [C:/Users/Jerry Chang/Desktop/summer2017/Project/Summer_Project/summer_project.srcs/sources_1/imports/src/MDPath.v:60]
+WARNING: [Synth 8-3295] tying undriven pin M3:I3[18] to constant 0 [C:/Users/Jerry Chang/Desktop/summer2017/Project/Summer_Project/summer_project.srcs/sources_1/imports/src/MDPath.v:60]
+WARNING: [Synth 8-3295] tying undriven pin M3:I3[17] to constant 0 [C:/Users/Jerry Chang/Desktop/summer2017/Project/Summer_Project/summer_project.srcs/sources_1/imports/src/MDPath.v:60]
+WARNING: [Synth 8-3295] tying undriven pin M3:I3[16] to constant 0 [C:/Users/Jerry Chang/Desktop/summer2017/Project/Summer_Project/summer_project.srcs/sources_1/imports/src/MDPath.v:60]
+WARNING: [Synth 8-3295] tying undriven pin M3:I3[15] to constant 0 [C:/Users/Jerry Chang/Desktop/summer2017/Project/Summer_Project/summer_project.srcs/sources_1/imports/src/MDPath.v:60]
+WARNING: [Synth 8-3295] tying undriven pin M3:I3[14] to constant 0 [C:/Users/Jerry Chang/Desktop/summer2017/Project/Summer_Project/summer_project.srcs/sources_1/imports/src/MDPath.v:60]
+WARNING: [Synth 8-3295] tying undriven pin M3:I3[13] to constant 0 [C:/Users/Jerry Chang/Desktop/summer2017/Project/Summer_Project/summer_project.srcs/sources_1/imports/src/MDPath.v:60]
+WARNING: [Synth 8-3295] tying undriven pin M3:I3[12] to constant 0 [C:/Users/Jerry Chang/Desktop/summer2017/Project/Summer_Project/summer_project.srcs/sources_1/imports/src/MDPath.v:60]
+WARNING: [Synth 8-3295] tying undriven pin M3:I3[11] to constant 0 [C:/Users/Jerry Chang/Desktop/summer2017/Project/Summer_Project/summer_project.srcs/sources_1/imports/src/MDPath.v:60]
+WARNING: [Synth 8-3295] tying undriven pin M3:I3[10] to constant 0 [C:/Users/Jerry Chang/Desktop/summer2017/Project/Summer_Project/summer_project.srcs/sources_1/imports/src/MDPath.v:60]
+WARNING: [Synth 8-3295] tying undriven pin M3:I3[9] to constant 0 [C:/Users/Jerry Chang/Desktop/summer2017/Project/Summer_Project/summer_project.srcs/sources_1/imports/src/MDPath.v:60]
+WARNING: [Synth 8-3295] tying undriven pin M3:I3[8] to constant 0 [C:/Users/Jerry Chang/Desktop/summer2017/Project/Summer_Project/summer_project.srcs/sources_1/imports/src/MDPath.v:60]
+WARNING: [Synth 8-3295] tying undriven pin M3:I3[7] to constant 0 [C:/Users/Jerry Chang/Desktop/summer2017/Project/Summer_Project/summer_project.srcs/sources_1/imports/src/MDPath.v:60]
+WARNING: [Synth 8-3295] tying undriven pin M3:I3[6] to constant 0 [C:/Users/Jerry Chang/Desktop/summer2017/Project/Summer_Project/summer_project.srcs/sources_1/imports/src/MDPath.v:60]
+WARNING: [Synth 8-3295] tying undriven pin M3:I3[5] to constant 0 [C:/Users/Jerry Chang/Desktop/summer2017/Project/Summer_Project/summer_project.srcs/sources_1/imports/src/MDPath.v:60]
+WARNING: [Synth 8-3295] tying undriven pin M3:I3[4] to constant 0 [C:/Users/Jerry Chang/Desktop/summer2017/Project/Summer_Project/summer_project.srcs/sources_1/imports/src/MDPath.v:60]
+WARNING: [Synth 8-3295] tying undriven pin M3:I3[3] to constant 0 [C:/Users/Jerry Chang/Desktop/summer2017/Project/Summer_Project/summer_project.srcs/sources_1/imports/src/MDPath.v:60]
+WARNING: [Synth 8-3295] tying undriven pin M3:I3[2] to constant 0 [C:/Users/Jerry Chang/Desktop/summer2017/Project/Summer_Project/summer_project.srcs/sources_1/imports/src/MDPath.v:60]
+WARNING: [Synth 8-3295] tying undriven pin M3:I3[1] to constant 0 [C:/Users/Jerry Chang/Desktop/summer2017/Project/Summer_Project/summer_project.srcs/sources_1/imports/src/MDPath.v:60]
+WARNING: [Synth 8-3295] tying undriven pin M3:I3[0] to constant 0 [C:/Users/Jerry Chang/Desktop/summer2017/Project/Summer_Project/summer_project.srcs/sources_1/imports/src/MDPath.v:60]
+WARNING: [Synth 8-3295] tying undriven pin U4:counter1_out to constant 0 [C:/Users/Jerry Chang/Desktop/summer2017/Project/Summer_Project/summer_project.srcs/sources_1/imports/src/top.v:120]
+WARNING: [Synth 8-3295] tying undriven pin U4:counter2_out to constant 0 [C:/Users/Jerry Chang/Desktop/summer2017/Project/Summer_Project/summer_project.srcs/sources_1/imports/src/top.v:120]
+WARNING: [Synth 8-3295] tying undriven pin U5:data2[31] to constant 0 [C:/Users/Jerry Chang/Desktop/summer2017/Project/Summer_Project/summer_project.srcs/sources_1/imports/src/top.v:157]
+WARNING: [Synth 8-3295] tying undriven pin U5:data2[30] to constant 0 [C:/Users/Jerry Chang/Desktop/summer2017/Project/Summer_Project/summer_project.srcs/sources_1/imports/src/top.v:157]
+WARNING: [Synth 8-3295] tying undriven pin U5:data2[29] to constant 0 [C:/Users/Jerry Chang/Desktop/summer2017/Project/Summer_Project/summer_project.srcs/sources_1/imports/src/top.v:157]
+WARNING: [Synth 8-3295] tying undriven pin U5:data2[28] to constant 0 [C:/Users/Jerry Chang/Desktop/summer2017/Project/Summer_Project/summer_project.srcs/sources_1/imports/src/top.v:157]
+WARNING: [Synth 8-3295] tying undriven pin U5:data2[27] to constant 0 [C:/Users/Jerry Chang/Desktop/summer2017/Project/Summer_Project/summer_project.srcs/sources_1/imports/src/top.v:157]
+WARNING: [Synth 8-3295] tying undriven pin U5:data2[26] to constant 0 [C:/Users/Jerry Chang/Desktop/summer2017/Project/Summer_Project/summer_project.srcs/sources_1/imports/src/top.v:157]
+WARNING: [Synth 8-3295] tying undriven pin U5:data2[25] to constant 0 [C:/Users/Jerry Chang/Desktop/summer2017/Project/Summer_Project/summer_project.srcs/sources_1/imports/src/top.v:157]
+WARNING: [Synth 8-3295] tying undriven pin U5:data2[24] to constant 0 [C:/Users/Jerry Chang/Desktop/summer2017/Project/Summer_Project/summer_project.srcs/sources_1/imports/src/top.v:157]
+WARNING: [Synth 8-3295] tying undriven pin U5:data2[23] to constant 0 [C:/Users/Jerry Chang/Desktop/summer2017/Project/Summer_Project/summer_project.srcs/sources_1/imports/src/top.v:157]
+WARNING: [Synth 8-3295] tying undriven pin U5:data2[22] to constant 0 [C:/Users/Jerry Chang/Desktop/summer2017/Project/Summer_Project/summer_project.srcs/sources_1/imports/src/top.v:157]
+WARNING: [Synth 8-3295] tying undriven pin U5:data2[21] to constant 0 [C:/Users/Jerry Chang/Desktop/summer2017/Project/Summer_Project/summer_project.srcs/sources_1/imports/src/top.v:157]
+WARNING: [Synth 8-3295] tying undriven pin U5:data2[20] to constant 0 [C:/Users/Jerry Chang/Desktop/summer2017/Project/Summer_Project/summer_project.srcs/sources_1/imports/src/top.v:157]
+WARNING: [Synth 8-3295] tying undriven pin U5:data2[19] to constant 0 [C:/Users/Jerry Chang/Desktop/summer2017/Project/Summer_Project/summer_project.srcs/sources_1/imports/src/top.v:157]
+WARNING: [Synth 8-3295] tying undriven pin U5:data2[18] to constant 0 [C:/Users/Jerry Chang/Desktop/summer2017/Project/Summer_Project/summer_project.srcs/sources_1/imports/src/top.v:157]
+WARNING: [Synth 8-3295] tying undriven pin U5:data2[17] to constant 0 [C:/Users/Jerry Chang/Desktop/summer2017/Project/Summer_Project/summer_project.srcs/sources_1/imports/src/top.v:157]
+WARNING: [Synth 8-3295] tying undriven pin U5:data2[16] to constant 0 [C:/Users/Jerry Chang/Desktop/summer2017/Project/Summer_Project/summer_project.srcs/sources_1/imports/src/top.v:157]
+WARNING: [Synth 8-3295] tying undriven pin U5:data2[15] to constant 0 [C:/Users/Jerry Chang/Desktop/summer2017/Project/Summer_Project/summer_project.srcs/sources_1/imports/src/top.v:157]
+WARNING: [Synth 8-3295] tying undriven pin U5:data2[14] to constant 0 [C:/Users/Jerry Chang/Desktop/summer2017/Project/Summer_Project/summer_project.srcs/sources_1/imports/src/top.v:157]
+WARNING: [Synth 8-3295] tying undriven pin U5:data2[13] to constant 0 [C:/Users/Jerry Chang/Desktop/summer2017/Project/Summer_Project/summer_project.srcs/sources_1/imports/src/top.v:157]
+WARNING: [Synth 8-3295] tying undriven pin U5:data2[12] to constant 0 [C:/Users/Jerry Chang/Desktop/summer2017/Project/Summer_Project/summer_project.srcs/sources_1/imports/src/top.v:157]
+WARNING: [Synth 8-3295] tying undriven pin U5:data2[11] to constant 0 [C:/Users/Jerry Chang/Desktop/summer2017/Project/Summer_Project/summer_project.srcs/sources_1/imports/src/top.v:157]
+WARNING: [Synth 8-3295] tying undriven pin U5:data2[10] to constant 0 [C:/Users/Jerry Chang/Desktop/summer2017/Project/Summer_Project/summer_project.srcs/sources_1/imports/src/top.v:157]
+WARNING: [Synth 8-3295] tying undriven pin U5:data2[9] to constant 0 [C:/Users/Jerry Chang/Desktop/summer2017/Project/Summer_Project/summer_project.srcs/sources_1/imports/src/top.v:157]
+WARNING: [Synth 8-3295] tying undriven pin U5:data2[8] to constant 0 [C:/Users/Jerry Chang/Desktop/summer2017/Project/Summer_Project/summer_project.srcs/sources_1/imports/src/top.v:157]
+WARNING: [Synth 8-3295] tying undriven pin U5:data2[7] to constant 0 [C:/Users/Jerry Chang/Desktop/summer2017/Project/Summer_Project/summer_project.srcs/sources_1/imports/src/top.v:157]
+WARNING: [Synth 8-3295] tying undriven pin U5:data2[6] to constant 0 [C:/Users/Jerry Chang/Desktop/summer2017/Project/Summer_Project/summer_project.srcs/sources_1/imports/src/top.v:157]
+WARNING: [Synth 8-3295] tying undriven pin U5:data2[5] to constant 0 [C:/Users/Jerry Chang/Desktop/summer2017/Project/Summer_Project/summer_project.srcs/sources_1/imports/src/top.v:157]
+WARNING: [Synth 8-3295] tying undriven pin U5:data2[4] to constant 0 [C:/Users/Jerry Chang/Desktop/summer2017/Project/Summer_Project/summer_project.srcs/sources_1/imports/src/top.v:157]
+WARNING: [Synth 8-3295] tying undriven pin U5:data2[3] to constant 0 [C:/Users/Jerry Chang/Desktop/summer2017/Project/Summer_Project/summer_project.srcs/sources_1/imports/src/top.v:157]
+WARNING: [Synth 8-3295] tying undriven pin U5:data2[2] to constant 0 [C:/Users/Jerry Chang/Desktop/summer2017/Project/Summer_Project/summer_project.srcs/sources_1/imports/src/top.v:157]
+WARNING: [Synth 8-3295] tying undriven pin U5:data2[1] to constant 0 [C:/Users/Jerry Chang/Desktop/summer2017/Project/Summer_Project/summer_project.srcs/sources_1/imports/src/top.v:157]
+WARNING: [Synth 8-3295] tying undriven pin U5:data2[0] to constant 0 [C:/Users/Jerry Chang/Desktop/summer2017/Project/Summer_Project/summer_project.srcs/sources_1/imports/src/top.v:157]
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:09 ; elapsed = 00:00:12 . Memory (MB): peak = 380.473 ; gain = 173.328
+---------------------------------------------------------------------------------
+WARNING: [Project 1-486] Could not resolve non-primitive black box cell 'LEDP2S' instantiated as 'U7/P2LED' [C:/Users/Jerry Chang/Desktop/summer2017/Project/Summer_Project/summer_project.srcs/sources_1/imports/src/GPIO.v:49]
+WARNING: [Project 1-486] Could not resolve non-primitive black box cell 'P2S' instantiated as 'U6/M2' [C:/Users/Jerry Chang/Desktop/summer2017/Project/Summer_Project/summer_project.srcs/sources_1/imports/src/Display.v:47]
+WARNING: [Project 1-486] Could not resolve non-primitive black box cell 'PIO' instantiated as 'U71' [C:/Users/Jerry Chang/Desktop/summer2017/Project/Summer_Project/summer_project.srcs/sources_1/imports/src/top.v:210]
+WARNING: [Project 1-486] Could not resolve non-primitive black box cell 'RAM_B' instantiated as 'U2' [C:/Users/Jerry Chang/Desktop/summer2017/Project/Summer_Project/summer_project.srcs/sources_1/imports/src/top.v:106]
+WARNING: [Project 1-486] Could not resolve non-primitive black box cell 'SAnti_jitter' instantiated as 'U9' [C:/Users/Jerry Chang/Desktop/summer2017/Project/Summer_Project/summer_project.srcs/sources_1/imports/src/top.v:226]
+WARNING: [Project 1-486] Could not resolve non-primitive black box cell 'SEnter_2_32' instantiated as 'M4' [C:/Users/Jerry Chang/Desktop/summer2017/Project/Summer_Project/summer_project.srcs/sources_1/imports/src/top.v:275]
+WARNING: [Project 1-486] Could not resolve non-primitive black box cell 'Seg7_Dev' instantiated as 'U61' [C:/Users/Jerry Chang/Desktop/summer2017/Project/Summer_Project/summer_project.srcs/sources_1/imports/src/top.v:188]
+WARNING: [Project 1-486] Could not resolve non-primitive black box cell 'char_ram' instantiated as 'U3' [C:/Users/Jerry Chang/Desktop/summer2017/Project/Summer_Project/summer_project.srcs/sources_1/imports/src/top.v:112]
+WARNING: [Project 1-486] Could not resolve non-primitive black box cell 'cmd_ram' instantiated as 'U14' [C:/Users/Jerry Chang/Desktop/summer2017/Project/Summer_Project/summer_project.srcs/sources_1/imports/src/top.v:269]
+INFO: [Netlist 29-17] Analyzing 321 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Device 21-403] Loading part xq7k325trf676-2L
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/Users/Jerry Chang/Desktop/summer2017/Project/Summer_Project/summer_project.runs/synth_1/.Xil/Vivado-9820-DESKTOP-N4M5H14/dcp/RAM_B_in_context.xdc] for cell 'U2'
+Finished Parsing XDC File [C:/Users/Jerry Chang/Desktop/summer2017/Project/Summer_Project/summer_project.runs/synth_1/.Xil/Vivado-9820-DESKTOP-N4M5H14/dcp/RAM_B_in_context.xdc] for cell 'U2'
+Parsing XDC File [C:/Users/Jerry Chang/Desktop/summer2017/Project/Summer_Project/summer_project.runs/synth_1/.Xil/Vivado-9820-DESKTOP-N4M5H14/dcp_2/char_ram_in_context.xdc] for cell 'U3'
+Finished Parsing XDC File [C:/Users/Jerry Chang/Desktop/summer2017/Project/Summer_Project/summer_project.runs/synth_1/.Xil/Vivado-9820-DESKTOP-N4M5H14/dcp_2/char_ram_in_context.xdc] for cell 'U3'
+Parsing XDC File [C:/Users/Jerry Chang/Desktop/summer2017/Project/Summer_Project/summer_project.runs/synth_1/.Xil/Vivado-9820-DESKTOP-N4M5H14/dcp_3/cmd_ram_in_context.xdc] for cell 'U14'
+Finished Parsing XDC File [C:/Users/Jerry Chang/Desktop/summer2017/Project/Summer_Project/summer_project.runs/synth_1/.Xil/Vivado-9820-DESKTOP-N4M5H14/dcp_3/cmd_ram_in_context.xdc] for cell 'U14'
+Parsing XDC File [C:/Users/Jerry Chang/Desktop/summer2017/Project/Summer_Project/summer_project.srcs/constrs_1/imports/sources_1/contraints.xdc]
+Finished Parsing XDC File [C:/Users/Jerry Chang/Desktop/summer2017/Project/Summer_Project/summer_project.srcs/constrs_1/imports/sources_1/contraints.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/Jerry Chang/Desktop/summer2017/Project/Summer_Project/summer_project.srcs/constrs_1/imports/sources_1/contraints.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/top_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/top_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 321 instances were transformed.
+  AND2 => LUT2: 8 instances
+  AND3 => LUT3: 88 instances
+  AND4 => LUT4: 72 instances
+  IBUFGDS => IBUFDS: 1 instances
+  INV => LUT1: 40 instances
+  OR2 => LUT2: 56 instances
+  OR3 => LUT3: 24 instances
+  OR4 => LUT4: 32 instances
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.010 . Memory (MB): peak = 703.352 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:21 ; elapsed = 00:00:25 . Memory (MB): peak = 703.352 ; gain = 496.207
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xq7k325trf676-2L
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:21 ; elapsed = 00:00:25 . Memory (MB): peak = 703.352 ; gain = 496.207
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:21 ; elapsed = 00:00:25 . Memory (MB): peak = 703.352 ; gain = 496.207
+---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'state_out_reg' in module 'MCtrl'
+INFO: [Synth 8-5546] ROM "SorU" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ALUSrcB" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ALUSrcA" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "CPU_MIO" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "Branch" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "PCWriteCond" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5587] ROM size for "PCWrite" is below threshold of ROM address width. It will be mapped to LUTs
+INFO: [Synth 8-5546] ROM "PCSource" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "MemtoReg" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5587] ROM size for "RegWrite" is below threshold of ROM address width. It will be mapped to LUTs
+INFO: [Synth 8-5546] ROM "RegDst" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "IRWrite" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "IorD" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "MemWrite" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "MemRead" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "state_out" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "state_out" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5545] ROM "zero" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5546] ROM "register_reg[0]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "register_reg[1]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "register_reg[2]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "register_reg[3]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "register_reg[4]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "register_reg[5]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "register_reg[6]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "register_reg[7]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "register_reg[8]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "register_reg[9]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "register_reg[10]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "register_reg[11]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "register_reg[12]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "register_reg[13]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "register_reg[14]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "register_reg[15]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "register_reg[16]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "register_reg[17]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "register_reg[18]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "register_reg[19]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "register_reg[20]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "register_reg[21]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "register_reg[22]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "register_reg[23]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "register_reg[24]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "register_reg[25]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "register_reg[26]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "register_reg[27]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "register_reg[28]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "register_reg[29]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "register_reg[30]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "register_reg[31]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "v_count" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "PS2Cf" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "PS2Cf" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "PS2Df" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "PS2Df" won't be mapped to RAM because it is too sparse
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                      IF |                            00000 |                            00000
+                      ID |                            00001 |                            00001
+                 EXC_MEM |                            00010 |                            00010
+                  MEM_RD |                            00011 |                            01100
+                   WB_LW |                            00100 |                            01110
+                  MEM_WD |                            00101 |                            01101
+                   EXC_I |                            00110 |                            00100
+                    WB_I |                            00111 |                            10000
+                 EXC_LUI |                            01000 |                            00101
+                 EXC_BEQ |                            01001 |                            00110
+                 EXC_BNE |                            01010 |                            00111
+                   EXC_J |                            01011 |                            01000
+                 EXC_JAL |                            01100 |                            01001
+                   ERROR |                            01101 |                            11111
+                EXC_JALR |                            01110 |                            01011
+                  EXC_JR |                            01111 |                            01010
+                   EXC_R |                            10000 |                            00011
+                    WB_R |                            10001 |                            01111
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_out_reg' using encoding 'sequential' in module 'MCtrl'
+WARNING: [Synth 8-327] inferring latch for variable 'MemRead_reg' [C:/Users/Jerry Chang/Desktop/summer2017/Project/Summer_Project/summer_project.srcs/sources_1/imports/src/MCtrl.v:127]
+WARNING: [Synth 8-327] inferring latch for variable 'MemWrite_reg' [C:/Users/Jerry Chang/Desktop/summer2017/Project/Summer_Project/summer_project.srcs/sources_1/imports/src/MCtrl.v:127]
+WARNING: [Synth 8-327] inferring latch for variable 'ALU_operation_reg' [C:/Users/Jerry Chang/Desktop/summer2017/Project/Summer_Project/summer_project.srcs/sources_1/imports/src/MCtrl.v:127]
+WARNING: [Synth 8-327] inferring latch for variable 'CPU_MIO_reg' [C:/Users/Jerry Chang/Desktop/summer2017/Project/Summer_Project/summer_project.srcs/sources_1/imports/src/MCtrl.v:127]
+WARNING: [Synth 8-327] inferring latch for variable 'IorD_reg' [C:/Users/Jerry Chang/Desktop/summer2017/Project/Summer_Project/summer_project.srcs/sources_1/imports/src/MCtrl.v:127]
+WARNING: [Synth 8-327] inferring latch for variable 'SorU_reg' [C:/Users/Jerry Chang/Desktop/summer2017/Project/Summer_Project/summer_project.srcs/sources_1/imports/src/MCtrl.v:127]
+WARNING: [Synth 8-327] inferring latch for variable 'IRWrite_reg' [C:/Users/Jerry Chang/Desktop/summer2017/Project/Summer_Project/summer_project.srcs/sources_1/imports/src/MCtrl.v:127]
+WARNING: [Synth 8-327] inferring latch for variable 'RegDst_reg' [C:/Users/Jerry Chang/Desktop/summer2017/Project/Summer_Project/summer_project.srcs/sources_1/imports/src/MCtrl.v:127]
+WARNING: [Synth 8-327] inferring latch for variable 'RegWrite_reg' [C:/Users/Jerry Chang/Desktop/summer2017/Project/Summer_Project/summer_project.srcs/sources_1/imports/src/MCtrl.v:127]
+WARNING: [Synth 8-327] inferring latch for variable 'MemtoReg_reg' [C:/Users/Jerry Chang/Desktop/summer2017/Project/Summer_Project/summer_project.srcs/sources_1/imports/src/MCtrl.v:127]
+WARNING: [Synth 8-327] inferring latch for variable 'ALUSrcA_reg' [C:/Users/Jerry Chang/Desktop/summer2017/Project/Summer_Project/summer_project.srcs/sources_1/imports/src/MCtrl.v:127]
+WARNING: [Synth 8-327] inferring latch for variable 'ALUSrcB_reg' [C:/Users/Jerry Chang/Desktop/summer2017/Project/Summer_Project/summer_project.srcs/sources_1/imports/src/MCtrl.v:127]
+WARNING: [Synth 8-327] inferring latch for variable 'PCSource_reg' [C:/Users/Jerry Chang/Desktop/summer2017/Project/Summer_Project/summer_project.srcs/sources_1/imports/src/MCtrl.v:127]
+WARNING: [Synth 8-327] inferring latch for variable 'PCWrite_reg' [C:/Users/Jerry Chang/Desktop/summer2017/Project/Summer_Project/summer_project.srcs/sources_1/imports/src/MCtrl.v:127]
+WARNING: [Synth 8-327] inferring latch for variable 'PCWriteCond_reg' [C:/Users/Jerry Chang/Desktop/summer2017/Project/Summer_Project/summer_project.srcs/sources_1/imports/src/MCtrl.v:127]
+WARNING: [Synth 8-327] inferring latch for variable 'Branch_reg' [C:/Users/Jerry Chang/Desktop/summer2017/Project/Summer_Project/summer_project.srcs/sources_1/imports/src/MCtrl.v:127]
+WARNING: [Synth 8-327] inferring latch for variable 'rand_reg' [C:/Users/Jerry Chang/Desktop/summer2017/Project/Summer_Project/summer_project.srcs/sources_1/imports/src/MIO_BUS.v:108]
+WARNING: [Synth 8-327] inferring latch for variable 'vram_data_in_reg' [C:/Users/Jerry Chang/Desktop/summer2017/Project/Summer_Project/summer_project.srcs/sources_1/imports/src/MIO_BUS.v:90]
+WARNING: [Synth 8-327] inferring latch for variable 'cpu_vram_addr_reg' [C:/Users/Jerry Chang/Desktop/summer2017/Project/Summer_Project/summer_project.srcs/sources_1/imports/src/MIO_BUS.v:89]
+WARNING: [Synth 8-327] inferring latch for variable 'debug_reg' [C:/Users/Jerry Chang/Desktop/summer2017/Project/Summer_Project/summer_project.srcs/sources_1/imports/src/MIO_BUS.v:85]
+WARNING: [Synth 8-327] inferring latch for variable 'cmd_data_in_reg' [C:/Users/Jerry Chang/Desktop/summer2017/Project/Summer_Project/summer_project.srcs/sources_1/imports/src/MIO_BUS.v:103]
+WARNING: [Synth 8-327] inferring latch for variable 'cmd_addr_reg' [C:/Users/Jerry Chang/Desktop/summer2017/Project/Summer_Project/summer_project.srcs/sources_1/imports/src/MIO_BUS.v:102]
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:29 ; elapsed = 00:00:33 . Memory (MB): peak = 703.352 ; gain = 496.207
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
+	   3 Input     32 Bit       Adders := 1     
+	   3 Input     13 Bit       Adders := 1     
+	   2 Input     12 Bit       Adders := 1     
+	   2 Input     10 Bit       Adders := 4     
+	   2 Input      7 Bit       Adders := 1     
+	   2 Input      2 Bit       Adders := 1     
++---XORs : 
+	   2 Input     32 Bit         XORs := 1     
+	   2 Input      1 Bit         XORs := 1     
++---Registers : 
+	               32 Bit    Registers := 37    
+	               10 Bit    Registers := 2     
+	                8 Bit    Registers := 5     
+	                6 Bit    Registers := 1     
+	                4 Bit    Registers := 3     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 8     
++---Muxes : 
+	   2 Input     64 Bit        Muxes := 1     
+	  33 Input     32 Bit        Muxes := 2     
+	   4 Input     32 Bit        Muxes := 4     
+	   2 Input     32 Bit        Muxes := 3     
+	   8 Input     32 Bit        Muxes := 3     
+	   2 Input     14 Bit        Muxes := 1     
+	   2 Input     13 Bit        Muxes := 1     
+	   8 Input     10 Bit        Muxes := 1     
+	   2 Input      6 Bit        Muxes := 1     
+	  18 Input      5 Bit        Muxes := 1     
+	  37 Input      5 Bit        Muxes := 1     
+	   4 Input      5 Bit        Muxes := 1     
+	   9 Input      3 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 1     
+	   6 Input      3 Bit        Muxes := 1     
+	  18 Input      3 Bit        Muxes := 1     
+	   9 Input      2 Bit        Muxes := 2     
+	  18 Input      2 Bit        Muxes := 5     
+	   2 Input      1 Bit        Muxes := 45    
+	   6 Input      1 Bit        Muxes := 2     
+	  18 Input      1 Bit        Muxes := 13    
+	   8 Input      1 Bit        Muxes := 11    
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module MCtrl 
+Detailed RTL Component Info : 
++---Muxes : 
+	  18 Input      5 Bit        Muxes := 1     
+	  37 Input      5 Bit        Muxes := 1     
+	   9 Input      3 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 1     
+	   6 Input      3 Bit        Muxes := 1     
+	  18 Input      3 Bit        Muxes := 1     
+	   9 Input      2 Bit        Muxes := 2     
+	  18 Input      2 Bit        Muxes := 5     
+	   2 Input      1 Bit        Muxes := 2     
+	   6 Input      1 Bit        Muxes := 2     
+	  18 Input      1 Bit        Muxes := 13    
+Module REG32 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 1     
+Module alu 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
+	   3 Input     32 Bit       Adders := 1     
++---XORs : 
+	   2 Input     32 Bit         XORs := 1     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module Regs 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 32    
++---Muxes : 
+	  33 Input     32 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 32    
+Module MUX4T1_5 
+Detailed RTL Component Info : 
++---Muxes : 
+	   4 Input      5 Bit        Muxes := 1     
+Module MUX4T1_32 
+Detailed RTL Component Info : 
++---Muxes : 
+	   4 Input     32 Bit        Muxes := 1     
+Module MUX2T1_32 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 1     
+Module Ext_32 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 1     
+Module MDPath 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      1 Bit         XORs := 1     
+Module MIO_BUS 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     12 Bit       Adders := 1     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 1     
+	   8 Input     32 Bit        Muxes := 3     
+	   8 Input     10 Bit        Muxes := 1     
+	   2 Input      6 Bit        Muxes := 1     
+	   8 Input      1 Bit        Muxes := 11    
+Module Multi_8CH32 
+Detailed RTL Component Info : 
++---Registers : 
+	                8 Bit    Registers := 2     
+Module MUX2T1_64 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input     64 Bit        Muxes := 1     
+Module GPIO 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input     14 Bit        Muxes := 1     
+Module clk_div 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      7 Bit       Adders := 1     
+	   2 Input      2 Bit       Adders := 1     
++---Registers : 
+	                6 Bit    Registers := 1     
+	                2 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module Counter 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 1     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 4     
+Module vgac 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input     13 Bit       Adders := 1     
+	   2 Input     10 Bit       Adders := 4     
++---Registers : 
+	               10 Bit    Registers := 2     
+	                4 Bit    Registers := 3     
+	                1 Bit    Registers := 3     
++---Muxes : 
+	   2 Input     13 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module PS2 
+Detailed RTL Component Info : 
++---Registers : 
+	                8 Bit    Registers := 3     
+	                1 Bit    Registers := 3     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 4     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 840 (col length:140)
+BRAMs: 890 (col length: RAMB18 140 RAMB36 70)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+Start Parallel Synthesis Optimization  : Time (s): cpu = 00:00:29 ; elapsed = 00:00:33 . Memory (MB): peak = 703.352 ; gain = 496.207
+---------------------------------------------------------------------------------
+Start Cross Boundary Optimization
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5545] ROM "DataPath/U1/zero" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5546] ROM "v_count" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "U12/PS2Cf" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "U12/PS2Cf" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "U12/PS2Df" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "U12/PS2Df" won't be mapped to RAM because it is too sparse
+WARNING: [Synth 8-3917] design top has port Buzzer driven by constant 1
+---------------------------------------------------------------------------------
+Finished Cross Boundary Optimization : Time (s): cpu = 00:00:39 ; elapsed = 00:00:43 . Memory (MB): peak = 703.352 ; gain = 496.207
+---------------------------------------------------------------------------------
+Finished Parallel Reinference  : Time (s): cpu = 00:00:39 ; elapsed = 00:00:43 . Memory (MB): peak = 703.352 ; gain = 496.207
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+ROM:
++------------+------------+---------------+----------------+
+|Module Name | RTL Object | Depth x Width | Implemented As | 
++------------+------------+---------------+----------------+
+|font_table  | rom        | 8192x1        | LUT            | 
+|font_table  | rom        | 8192x1        | LUT            | 
++------------+------------+---------------+----------------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Area Optimization
+---------------------------------------------------------------------------------
+INFO: [Synth 8-3886] merging instance 'U5/cpu_blink_reg[0]' (FDE) to 'U5/cpu_blink_reg[1]'
+INFO: [Synth 8-3886] merging instance 'U5/cpu_blink_reg[1]' (FDE) to 'U5/cpu_blink_reg[2]'
+INFO: [Synth 8-3886] merging instance 'U5/cpu_blink_reg[2]' (FDE) to 'U5/cpu_blink_reg[3]'
+INFO: [Synth 8-3886] merging instance 'U5/cpu_blink_reg[3]' (FDE) to 'U5/cpu_blink_reg[4]'
+INFO: [Synth 8-3886] merging instance 'U5/cpu_blink_reg[4]' (FDE) to 'U5/cpu_blink_reg[5]'
+INFO: [Synth 8-3886] merging instance 'U5/cpu_blink_reg[5]' (FDE) to 'U5/cpu_blink_reg[6]'
+INFO: [Synth 8-3886] merging instance 'U5/cpu_blink_reg[6]' (FDE) to 'U5/cpu_blink_reg[7]'
+INFO: [Synth 8-3886] merging instance 'U5/cpu_point_reg[0]' (FDE) to 'U5/cpu_point_reg[1]'
+INFO: [Synth 8-3886] merging instance 'U5/cpu_point_reg[1]' (FDE) to 'U5/cpu_point_reg[2]'
+INFO: [Synth 8-3886] merging instance 'U5/cpu_point_reg[2]' (FDE) to 'U5/cpu_point_reg[3]'
+INFO: [Synth 8-3886] merging instance 'U5/cpu_point_reg[3]' (FDE) to 'U5/cpu_point_reg[4]'
+INFO: [Synth 8-3886] merging instance 'U5/cpu_point_reg[4]' (FDE) to 'U5/cpu_point_reg[5]'
+INFO: [Synth 8-3886] merging instance 'U5/cpu_point_reg[5]' (FDE) to 'U5/cpu_point_reg[6]'
+INFO: [Synth 8-3886] merging instance 'U5/cpu_point_reg[6]' (FDE) to 'U5/cpu_point_reg[7]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\U5/cpu_point_reg[7] )
+INFO: [Synth 8-3886] merging instance 'U11/r_reg[0]' (FDR) to 'U11/b_reg[0]'
+INFO: [Synth 8-3886] merging instance 'U11/r_reg[1]' (FDR) to 'U11/b_reg[0]'
+INFO: [Synth 8-3886] merging instance 'U11/r_reg[2]' (FDR) to 'U11/b_reg[0]'
+INFO: [Synth 8-3886] merging instance 'U11/r_reg[3]' (FDR) to 'U11/b_reg[0]'
+INFO: [Synth 8-3886] merging instance 'U11/g_reg[0]' (FDR) to 'U11/b_reg[0]'
+INFO: [Synth 8-3886] merging instance 'U11/g_reg[1]' (FDR) to 'U11/b_reg[0]'
+INFO: [Synth 8-3886] merging instance 'U11/g_reg[2]' (FDR) to 'U11/b_reg[0]'
+INFO: [Synth 8-3886] merging instance 'U11/g_reg[3]' (FDR) to 'U11/b_reg[0]'
+INFO: [Synth 8-3886] merging instance 'U11/b_reg[0]' (FDR) to 'U11/b_reg[1]'
+INFO: [Synth 8-3886] merging instance 'U11/b_reg[1]' (FDR) to 'U11/b_reg[2]'
+INFO: [Synth 8-3886] merging instance 'U11/b_reg[2]' (FDR) to 'U11/b_reg[3]'
+WARNING: [Synth 8-3332] Sequential element (U1/Cotroller/CPU_MIO_reg) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (U1/DataPath/U2/register_reg[0][31]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (U1/DataPath/U2/register_reg[0][30]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (U1/DataPath/U2/register_reg[0][29]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (U1/DataPath/U2/register_reg[0][28]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (U1/DataPath/U2/register_reg[0][27]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (U1/DataPath/U2/register_reg[0][26]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (U1/DataPath/U2/register_reg[0][25]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (U1/DataPath/U2/register_reg[0][24]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (U1/DataPath/U2/register_reg[0][23]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (U1/DataPath/U2/register_reg[0][22]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (U1/DataPath/U2/register_reg[0][21]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (U1/DataPath/U2/register_reg[0][20]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (U1/DataPath/U2/register_reg[0][19]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (U1/DataPath/U2/register_reg[0][18]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (U1/DataPath/U2/register_reg[0][17]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (U1/DataPath/U2/register_reg[0][16]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (U1/DataPath/U2/register_reg[0][15]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (U1/DataPath/U2/register_reg[0][14]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (U1/DataPath/U2/register_reg[0][13]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (U1/DataPath/U2/register_reg[0][12]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (U1/DataPath/U2/register_reg[0][11]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (U1/DataPath/U2/register_reg[0][10]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (U1/DataPath/U2/register_reg[0][9]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (U1/DataPath/U2/register_reg[0][8]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (U1/DataPath/U2/register_reg[0][7]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (U1/DataPath/U2/register_reg[0][6]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (U1/DataPath/U2/register_reg[0][5]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (U1/DataPath/U2/register_reg[0][4]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (U1/DataPath/U2/register_reg[0][3]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (U1/DataPath/U2/register_reg[0][2]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (U1/DataPath/U2/register_reg[0][1]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (U1/DataPath/U2/register_reg[0][0]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (U5/cpu_blink_reg[6]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (U5/cpu_blink_reg[5]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (U5/cpu_blink_reg[4]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (U5/cpu_blink_reg[3]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (U5/cpu_blink_reg[2]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (U5/cpu_blink_reg[1]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (U5/cpu_blink_reg[0]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (U5/cpu_point_reg[7]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (U5/cpu_point_reg[6]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (U5/cpu_point_reg[5]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (U5/cpu_point_reg[4]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (U5/cpu_point_reg[3]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (U5/cpu_point_reg[2]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (U5/cpu_point_reg[1]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (U5/cpu_point_reg[0]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (U7/counter_set_reg[1]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (U7/counter_set_reg[0]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (U7/GPIOf0_reg[13]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (U7/GPIOf0_reg[12]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (U7/GPIOf0_reg[11]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (U7/GPIOf0_reg[10]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (U7/GPIOf0_reg[9]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (U7/GPIOf0_reg[8]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (U7/GPIOf0_reg[7]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (U7/GPIOf0_reg[6]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (U7/GPIOf0_reg[5]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (U7/GPIOf0_reg[4]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (U7/GPIOf0_reg[3]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (U7/GPIOf0_reg[2]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (U7/GPIOf0_reg[1]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (U7/GPIOf0_reg[0]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (U8/div_reg[1]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (U11/b_reg[0]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (U11/r_reg[0]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (U11/r_reg[1]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (U11/r_reg[2]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (U11/r_reg[3]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (U11/g_reg[0]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (U11/g_reg[1]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (U11/g_reg[2]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (U11/g_reg[3]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (U11/b_reg[1]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (U11/b_reg[2]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (U12/shift2_reg[0]) is unused and will be removed from module top.
+INFO: [Synth 8-3886] merging instance 'U1/Cotroller/PCSource_reg[0]' (LD) to 'U1/Cotroller/PCWriteCond_reg'
+WARNING: [Synth 8-3332] Sequential element (U1/Cotroller/PCSource_reg[0]) is unused and will be removed from module top.
+---------------------------------------------------------------------------------
+Finished Area Optimization : Time (s): cpu = 00:01:04 ; elapsed = 00:01:08 . Memory (MB): peak = 703.352 ; gain = 496.207
+---------------------------------------------------------------------------------
+Finished Parallel Area Optimization  : Time (s): cpu = 00:01:04 ; elapsed = 00:01:08 . Memory (MB): peak = 703.352 ; gain = 496.207
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:01:13 ; elapsed = 00:01:18 . Memory (MB): peak = 703.352 ; gain = 496.207
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:01:14 ; elapsed = 00:01:19 . Memory (MB): peak = 705.441 ; gain = 498.297
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:01:16 ; elapsed = 00:01:20 . Memory (MB): peak = 751.758 ; gain = 544.613
+---------------------------------------------------------------------------------
+Finished Parallel Technology Mapping Optimization  : Time (s): cpu = 00:01:16 ; elapsed = 00:01:20 . Memory (MB): peak = 751.758 ; gain = 544.613
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+Finished Parallel Synthesis Optimization  : Time (s): cpu = 00:01:16 ; elapsed = 00:01:20 . Memory (MB): peak = 751.758 ; gain = 544.613
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:01:17 ; elapsed = 00:01:21 . Memory (MB): peak = 751.758 ; gain = 544.613
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:01:17 ; elapsed = 00:01:21 . Memory (MB): peak = 751.758 ; gain = 544.613
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:17 ; elapsed = 00:01:22 . Memory (MB): peak = 751.758 ; gain = 544.613
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:01:17 ; elapsed = 00:01:22 . Memory (MB): peak = 751.758 ; gain = 544.613
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:01:17 ; elapsed = 00:01:22 . Memory (MB): peak = 751.758 ; gain = 544.613
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:01:17 ; elapsed = 00:01:22 . Memory (MB): peak = 751.758 ; gain = 544.613
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Static Shift Register Report:
++------------+-------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+|Module Name | RTL Name          | Length | Width | Reset Signal | Pull out first Reg | Pull out last Reg | SRL16E | SRLC32E | 
++------------+-------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+|top         | U12/shift2_reg[8] | 4      | 1     | NO           | NO                 | YES               | 1      | 0       | 
+|top         | U12/shift1_reg[8] | 3      | 1     | NO           | NO                 | YES               | 1      | 0       | 
++------------+-------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++------+--------------+----------+
+|      |BlackBox name |Instances |
++------+--------------+----------+
+|1     |RAM_B         |         1|
+|2     |char_ram      |         1|
+|3     |Seg7_Dev      |         1|
+|4     |PIO           |         1|
+|5     |SAnti_jitter  |         1|
+|6     |cmd_ram       |         1|
+|7     |SEnter_2_32   |         1|
+|8     |P2S           |         1|
+|9     |LEDP2S        |         1|
++------+--------------+----------+
+
+Report Cell Usage: 
++------+-------------+------+
+|      |Cell         |Count |
++------+-------------+------+
+|1     |LEDP2S       |     1|
+|2     |P2S          |     1|
+|3     |PIO          |     1|
+|4     |RAM_B        |     1|
+|5     |SAnti_jitter |     1|
+|6     |SEnter_2_32  |     1|
+|7     |Seg7_Dev     |     1|
+|8     |char_ram     |     1|
+|9     |cmd_ram      |     1|
+|10    |AND2         |     8|
+|11    |AND3         |    88|
+|12    |AND4         |    72|
+|13    |BUFG         |     8|
+|14    |CARRY4       |    51|
+|15    |INV          |    40|
+|16    |LUT1         |    64|
+|17    |LUT2         |   186|
+|18    |LUT3         |   201|
+|19    |LUT4         |    92|
+|20    |LUT5         |   342|
+|21    |LUT6         |  1022|
+|22    |MUXF7        |   333|
+|23    |OR2          |    56|
+|24    |OR3          |    24|
+|25    |OR4          |    32|
+|26    |SRL16E       |     2|
+|27    |FDCE         |  1182|
+|28    |FDPE         |     3|
+|29    |FDRE         |   129|
+|30    |LD           |   121|
+|31    |IBUF         |    23|
+|32    |IBUFGDS      |     1|
+|33    |OBUF         |    46|
++------+-------------+------+
+
+Report Instance Areas: 
++------+--------------+--------------+------+
+|      |Instance      |Module        |Cells |
++------+--------------+--------------+------+
+|1     |top           |              |  4384|
+|2     |  U0          |clk_diff      |     1|
+|3     |  U1          |MCPU          |  2888|
+|4     |    Cotroller |MCtrl         |   155|
+|5     |    DataPath  |MDPath        |  2733|
+|6     |      ALUOut  |REG32         |   257|
+|7     |      IR      |REG32_7       |   138|
+|8     |      PC      |REG32_8       |   127|
+|9     |      U1      |alu           |    23|
+|10    |      U2      |Regs          |  2156|
+|11    |      mdr     |REG32_9       |    32|
+|12    |  U10         |Counter       |   144|
+|13    |  U11         |vgac          |    99|
+|14    |  U12         |PS2           |    61|
+|15    |  U13         |font_table    |   166|
+|16    |  U4          |MIO_BUS       |   123|
+|17    |  U5          |Multi_8CH32   |     2|
+|18    |  U6          |Display       |   380|
+|19    |    SM1       |HexTo8SEG     |   376|
+|20    |      M0      |MC14495_ZJU   |    47|
+|21    |      M1      |MC14495_ZJU_0 |    47|
+|22    |      M2      |MC14495_ZJU_1 |    47|
+|23    |      M3      |MC14495_ZJU_2 |    47|
+|24    |      M4      |MC14495_ZJU_3 |    47|
+|25    |      M5      |MC14495_ZJU_4 |    47|
+|26    |      M6      |MC14495_ZJU_5 |    47|
+|27    |      M7      |MC14495_ZJU_6 |    47|
+|28    |  U7          |GPIO          |    37|
+|29    |  U8          |clk_div       |   155|
++------+--------------+--------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:01:17 ; elapsed = 00:01:22 . Memory (MB): peak = 751.758 ; gain = 544.613
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 155 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:59 ; elapsed = 00:01:08 . Memory (MB): peak = 751.758 ; gain = 107.973
+Synthesis Optimization Complete : Time (s): cpu = 00:01:17 ; elapsed = 00:01:22 . Memory (MB): peak = 751.758 ; gain = 544.613
+INFO: [Project 1-571] Translating synthesized netlist
+Reading core file 'C:/Users/Jerry Chang/Desktop/summer2017/Project/Summer_Project/summer_project.srcs/sources_1/imports/src/Seg7_Dev.ngc' for (cell view 'Seg7_Dev', library 'work')
+Parsing EDIF File [./.ngc2edfcache/Seg7_Dev_ngc_a291605b.edif]
+Finished Parsing EDIF File [./.ngc2edfcache/Seg7_Dev_ngc_a291605b.edif]
+Reading core file 'C:/Users/Jerry Chang/Desktop/summer2017/Project/Summer_Project/summer_project.srcs/sources_1/imports/src/PIO.ngc' for (cell view 'PIO', library 'work')
+Parsing EDIF File [./.ngc2edfcache/PIO_ngc_a291605b.edif]
+Finished Parsing EDIF File [./.ngc2edfcache/PIO_ngc_a291605b.edif]
+Reading core file 'C:/Users/Jerry Chang/Desktop/summer2017/Project/Summer_Project/summer_project.srcs/sources_1/imports/src/SAnti_jitter.ngc' for (cell view 'SAnti_jitter', library 'work')
+Parsing EDIF File [./.ngc2edfcache/SAnti_jitter_ngc_a291605b.edif]
+Finished Parsing EDIF File [./.ngc2edfcache/SAnti_jitter_ngc_a291605b.edif]
+Reading core file 'C:/Users/Jerry Chang/Desktop/summer2017/Project/Summer_Project/summer_project.srcs/sources_1/imports/src/SEnter_2_32.ngc' for (cell view 'SEnter_2_32', library 'work')
+Parsing EDIF File [./.ngc2edfcache/SEnter_2_32_ngc_a291605b.edif]
+Finished Parsing EDIF File [./.ngc2edfcache/SEnter_2_32_ngc_a291605b.edif]
+Reading core file 'C:/Users/Jerry Chang/Desktop/summer2017/Project/Summer_Project/summer_project.srcs/sources_1/imports/src/P2S.ngc' for (cell view 'P2S', library 'work')
+Parsing EDIF File [./.ngc2edfcache/P2S_ngc_a291605b.edif]
+Finished Parsing EDIF File [./.ngc2edfcache/P2S_ngc_a291605b.edif]
+Reading core file 'C:/Users/Jerry Chang/Desktop/summer2017/Project/Summer_Project/summer_project.srcs/sources_1/imports/src/LEDP2S.ngc' for (cell view 'LEDP2S', library 'work')
+Parsing EDIF File [./.ngc2edfcache/LEDP2S_ngc_a291605b.edif]
+Finished Parsing EDIF File [./.ngc2edfcache/LEDP2S_ngc_a291605b.edif]
+INFO: [Netlist 29-17] Analyzing 1040 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Xilinx ngc2edif P_INT.20160526
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 3 inverter(s) to 34 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 826 instances were transformed.
+  (MUXCY,XORCY) => CARRY4: 30 instances
+  AND2 => LUT2: 10 instances
+  AND3 => LUT3: 99 instances
+  AND4 => LUT4: 81 instances
+  FD => FDRE: 142 instances
+  FDC => FDCE: 2 instances
+  FDCE_1 => FDCE (inverted pins: C): 7 instances
+  FDE => FDRE: 52 instances
+  FDE_1 => FDRE (inverted pins: C): 87 instances
+  FDPE_1 => FDPE (inverted pins: C): 3 instances
+  IBUFGDS => IBUFDS: 1 instances
+  INV => LUT1: 65 instances
+  LD => LDCE: 121 instances
+  OR2 => LUT2: 63 instances
+  OR3 => LUT3: 27 instances
+  OR4 => LUT4: 36 instances
+
+INFO: [Common 17-83] Releasing license: Synthesis
+197 Infos, 287 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:01:18 ; elapsed = 00:01:20 . Memory (MB): peak = 751.758 ; gain = 519.723
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.065 . Memory (MB): peak = 751.758 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Fri Sep 15 15:32:55 2017...

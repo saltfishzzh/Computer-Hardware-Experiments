@@ -1,0 +1,22 @@
+#-----------------------------------------------------------
+# Vivado v2016.2 (64-bit)
+# SW Build 1577090 on Thu Jun  2 16:32:40 MDT 2016
+# IP Build 1577682 on Fri Jun  3 12:00:54 MDT 2016
+# Start of session at: Wed Nov 01 16:06:16 2017
+# Process ID: 4708
+# Current directory: C:/Users/Jerry Chang/Desktop/summer2017/Project/Summer_Project
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent7780 C:\Users\Jerry Chang\Desktop\summer2017\Project\Summer_Project\summer_project.xpr
+# Log file: C:/Users/Jerry Chang/Desktop/summer2017/Project/Summer_Project/vivado.log
+# Journal file: C:/Users/Jerry Chang/Desktop/summer2017/Project/Summer_Project\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {C:/Users/Jerry Chang/Desktop/summer2017/Project/Summer_Project/summer_project.xpr}
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2016.2/data/ip'.
+open_project: Time (s): cpu = 00:00:19 ; elapsed = 00:00:11 . Memory (MB): peak = 810.938 ; gain = 159.332
+update_compile_order -fileset sources_1
+exit
+INFO: [Common 17-206] Exiting Vivado at Wed Nov 01 19:27:36 2017...

@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2016.2 (64-bit)
+# SW Build 1577090 on Thu Jun  2 16:32:40 MDT 2016
+# IP Build 1577682 on Fri Jun  3 12:00:54 MDT 2016
+# Start of session at: Fri Sep 08 11:04:59 2017
+# Process ID: 9272
+# Current directory: C:/Users/Jerry Chang/Desktop/Summer_Project/summer_project.runs/char_ram_synth_1
+# Command line: vivado.exe -log char_ram.vds -mode batch -messageDb vivado.pb -notrace -source char_ram.tcl
+# Log file: C:/Users/Jerry Chang/Desktop/Summer_Project/summer_project.runs/char_ram_synth_1/char_ram.vds
+# Journal file: C:/Users/Jerry Chang/Desktop/Summer_Project/summer_project.runs/char_ram_synth_1\vivado.jou
+#-----------------------------------------------------------
+source char_ram.tcl -notrace

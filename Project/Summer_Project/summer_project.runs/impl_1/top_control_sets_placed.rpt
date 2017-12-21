@@ -1,0 +1,116 @@
+Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2016.2 (win64) Build 1577090 Thu Jun  2 16:32:40 MDT 2016
+| Date         : Fri Sep 15 15:33:43 2017
+| Host         : DESKTOP-N4M5H14 running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file top_control_sets_placed.rpt
+| Design       : top
+| Device       : xq7k325t
+------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Flip-Flop Distribution
+3. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Number of unique control sets                            |    63 |
+| Unused register locations in slices containing registers |   113 |
++----------------------------------------------------------+-------+
+
+
+2. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |             320 |          158 |
+| No           | No                    | Yes                    |              40 |           16 |
+| No           | Yes                   | No                     |              19 |            7 |
+| Yes          | No                    | No                     |              89 |           34 |
+| Yes          | No                    | Yes                    |            1150 |          539 |
+| Yes          | Yes                   | No                     |              29 |            9 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+3. Detailed Control Set Information
+-----------------------------------
+
++-----------------------------------+----------------------------------------+----------------------------------+------------------+----------------+
+|            Clock Signal           |              Enable Signal             |         Set/Reset Signal         | Slice Load Count | Bel Load Count |
++-----------------------------------+----------------------------------------+----------------------------------+------------------+----------------+
+|  Div_BUFG[1]                      |                                        | U11/rdn                          |                1 |              1 |
+|  Div_BUFG[8]                      |                                        |                                  |                1 |              1 |
+|  IO_clk_BUFG                      | U7/P2LED/S1                            |                                  |                1 |              1 |
+|  clk_200mhz_BUFG                  |                                        | U9/rst                           |                1 |              1 |
+|  clk_100mhz_BUFG                  | U6/M2/rst_inv                          |                                  |                2 |              4 |
+|  U9/clk1_BUFG                     | U9/_n0225_inv1_cepot                   |                                  |                3 |              5 |
+|  Clk_CPU_BUFG                     |                                        | U9/rst                           |                5 |              5 |
+|  U1/DataPath/ALUOut/Q_reg[0]_0[0] |                                        |                                  |                3 |              6 |
+|  clk_100mhz_BUFG                  | U8/num[5]_i_1_n_2                      |                                  |                2 |              6 |
+|  Div_BUFG[1]                      |                                        | U12/p_0_in                       |                1 |              8 |
+|  clk_100mhz_BUFG                  | U9/_n0243_inv1_cepot_cepot             |                                  |                3 |              8 |
+|  clk_100mhz_BUFG                  | U9/counter1[31]_GND_1_o_LessThan_102_o | U9/RSTN_temp_sw_temp[15]_OR_54_o |                3 |              8 |
+|  U9/clk1_BUFG                     |                                        |                                  |                4 |              9 |
+|  Div_BUFG[1]                      |                                        | U9/rst                           |                5 |             10 |
+|  Div_BUFG[1]                      | U11/v_count                            | U9/rst                           |                6 |             10 |
+| ~U12/shift1_reg[7]_0              |                                        |                                  |                5 |             18 |
+| ~IO_clk_BUFG                      | U1/DataPath/ALUOut/LED_reg[0][0]       | U9/rst                           |                7 |             19 |
+|  U1/DataPath/ALUOut/b_reg[3][0]   |                                        |                                  |                7 |             20 |
+|  IO_clk_BUFG                      |                                        |                                  |               10 |             20 |
+|  U9/clk1_BUFG                     | U9/counter[31]_GND_1_o_LessThan_5_o    | U9/btn_temp[3]_scan_AND_1_o      |                6 |             21 |
+|  U1/Cotroller/MemRead_reg_i_2_n_2 |                                        |                                  |               11 |             21 |
+|  Div_BUFG[1]                      |                                        |                                  |               10 |             21 |
+|  Clk_CPU_BUFG                     | U1/DataPath/IR/register_reg[19][31][0] | U9/rst                           |               12 |             32 |
+|  Clk_CPU_BUFG                     | U1/DataPath/IR/register_reg[20][31][0] | U9/rst                           |               13 |             32 |
+|  Clk_CPU_BUFG                     | U1/DataPath/IR/register_reg[21][31][0] | U9/rst                           |               15 |             32 |
+|  Clk_CPU_BUFG                     | U1/DataPath/IR/register_reg[22][31][0] | U9/rst                           |               12 |             32 |
+|  Clk_CPU_BUFG                     | U1/DataPath/IR/register_reg[23][31][0] | U9/rst                           |               15 |             32 |
+|  Clk_CPU_BUFG                     | U1/DataPath/IR/register_reg[24][31][0] | U9/rst                           |               16 |             32 |
+|  Clk_CPU_BUFG                     | U1/DataPath/IR/register_reg[25][31][0] | U9/rst                           |               16 |             32 |
+|  Clk_CPU_BUFG                     | U1/DataPath/IR/register_reg[26][31][0] | U9/rst                           |               13 |             32 |
+|  Clk_CPU_BUFG                     | U1/DataPath/IR/register_reg[27][31][0] | U9/rst                           |               12 |             32 |
+|  Clk_CPU_BUFG                     | U1/DataPath/IR/register_reg[28][31][0] | U9/rst                           |               18 |             32 |
+|  Clk_CPU_BUFG                     | U1/DataPath/IR/register_reg[29][31][0] | U9/rst                           |               16 |             32 |
+|  Clk_CPU_BUFG                     | U1/DataPath/IR/register_reg[2][31][0]  | U9/rst                           |               14 |             32 |
+|  Clk_CPU_BUFG                     | U1/DataPath/IR/register_reg[30][31][0] | U9/rst                           |               20 |             32 |
+|  Clk_CPU_BUFG                     | U1/DataPath/IR/register_reg[31][31][0] | U9/rst                           |               19 |             32 |
+|  Clk_CPU_BUFG                     | U1/DataPath/IR/register_reg[3][31][0]  | U9/rst                           |               19 |             32 |
+|  Clk_CPU_BUFG                     | U1/DataPath/IR/register_reg[4][31][0]  | U9/rst                           |               18 |             32 |
+|  Clk_CPU_BUFG                     | U1/DataPath/IR/register_reg[5][31][0]  | U9/rst                           |               17 |             32 |
+|  Clk_CPU_BUFG                     | U1/DataPath/IR/register_reg[6][31][0]  | U9/rst                           |               19 |             32 |
+|  Clk_CPU_BUFG                     | U1/DataPath/IR/register_reg[7][31][0]  | U9/rst                           |               19 |             32 |
+|  Clk_CPU_BUFG                     | U1/DataPath/IR/register_reg[8][31][0]  | U9/rst                           |               19 |             32 |
+|  Clk_CPU_BUFG                     | U1/DataPath/IR/register_reg[9][31][0]  | U9/rst                           |               19 |             32 |
+|  Clk_CPU_BUFG                     | U1/DataPath/IR/register_reg[11][31][0] | U9/rst                           |               11 |             32 |
+|  Clk_CPU_BUFG                     | U1/Cotroller/E[0]                      | U9/rst                           |                9 |             32 |
+|  Clk_CPU_BUFG                     | U1/Cotroller/Q_reg[0][0]               | U9/rst                           |               17 |             32 |
+|  Clk_CPU_BUFG                     | U1/DataPath/IR/E[0]                    | U9/rst                           |               11 |             32 |
+|  Clk_CPU_BUFG                     | U1/DataPath/IR/register_reg[10][31][0] | U9/rst                           |               10 |             32 |
+|  Clk_CPU_BUFG                     | U1/DataPath/IR/register_reg[12][31][0] | U9/rst                           |               17 |             32 |
+|  IO_clk_BUFG                      | U1/DataPath/ALUOut/E[0]                | U9/rst                           |                8 |             32 |
+|  Clk_CPU_BUFG                     | U1/DataPath/IR/register_reg[13][31][0] | U9/rst                           |               15 |             32 |
+|  n_1_601_BUFG                     |                                        |                                  |               28 |             32 |
+|  Clk_CPU_BUFG                     | U1/DataPath/IR/register_reg[14][31][0] | U9/rst                           |               16 |             32 |
+|  Clk_CPU_BUFG                     | U1/DataPath/IR/register_reg[15][31][0] | U9/rst                           |               19 |             32 |
+|  Clk_CPU_BUFG                     | U1/DataPath/IR/register_reg[16][31][0] | U9/rst                           |               19 |             32 |
+|  Clk_CPU_BUFG                     | U1/DataPath/IR/register_reg[17][31][0] | U9/rst                           |               10 |             32 |
+|  Clk_CPU_BUFG                     | U1/DataPath/IR/register_reg[18][31][0] | U9/rst                           |               14 |             32 |
+|  Div_BUFG[8]                      | U10/counter0[0]_i_1_n_2                | U9/rst                           |                9 |             33 |
+|  clk_100mhz_BUFG                  |                                        | U9/rst                           |               10 |             34 |
+|  n_0_482_BUFG                     |                                        |                                  |               16 |             42 |
+|  Clk_CPU_BUFG                     |                                        |                                  |               26 |             64 |
+| ~U6/M2/sclk                       | U6/M2/_n0067_inv                       |                                  |               23 |             65 |
+|  clk_100mhz_BUFG                  |                                        |                                  |               38 |             68 |
++-----------------------------------+----------------------------------------+----------------------------------+------------------+----------------+
+
+
